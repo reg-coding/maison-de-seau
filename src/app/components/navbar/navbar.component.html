@@ -1,0 +1,30 @@
+<div>
+  <nav [ngClass]="{'darker': !isHome}">
+    <input type="checkbox" id="nav" class="hidden" />
+    <label for="nav" class="nav-btn">
+      <i></i>
+      <i></i>
+      <i></i>
+    </label>
+    <div class="logo">
+      <a href="#">{{ brandName }}</a>
+    </div>
+    <div class="nav-wrapper">
+      <ul class="user-options">
+        <li>
+          <a routerLink="/login"
+            ><i class="small material-icons">account_circle</i></a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="small material-icons">shopping_basket</i></a>
+        </li>
+      </ul>
+      <ul class="product-options">
+        <li><a href="#">S/S 2020</a></li>
+        <li><a href="#">Past Collections</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
